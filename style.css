@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fondo {
+  background-color: bisque;
+}
+
+header {
+  width: 100%;
+  height: 40%;
+}
+header h1 {
+  background-color: rgb(255, 255, 255);
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 90px;
+  text-align: center;
+}
+
+.bg-dark {
+  background-color: rgba(231, 188, 195, 0.753) !important;
+}
+
+.navbar-brand img {
+  width: 5%;
+  height: 5%;
+}
+
+li .nav-item a {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+}
+
+/*# sourceMappingURL=style.css.map */
