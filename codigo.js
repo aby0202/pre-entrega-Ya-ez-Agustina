@@ -46,8 +46,11 @@ function filtro() {
     let filtroPrecios = prompt("1: Articulos menores a $1000 \n 2: Articulos desde $1000 a $10000 \n3: Articulos mayores a $10000 \n4: Atras");
     console.log(producto.filter((el) => el.precio < 1000));
 let busqueda1 = producto.filter((el) => el.precio < 1000);
-let busqueda2= producto.filter((el) => el.precio < 10000);
+busqueda1 = busqueda1.map((el) => el.nombre + el.precio);
+let busqueda2= producto.filter((el) => el.precio < 10000 && el.precio > 1000);
+busqueda2= busqueda2.map((el) => el.nombre + el.precio)
 let busqueda3= producto.filter((el) => el.precio > 10000);
+busqueda3= busqueda3.map((el) => el.nombre + el.precio)
     while (filtroPrecios !== 4) {
         if (filtroPrecios == 1) {
             alert(`Los productos encontrados son: ${busqueda1}`);
