@@ -1,39 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.fondo{
-    background-color: bisque;
+$fuente1:"Nanum Myeongjo",
+serif;
+$fuente2: "Julius Sans One",
+sans-serif;
+$fuente3:"Pinyon Script",
+cursive;
+
+.fondo {
+    background-image: url("imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-header{
+.texto {
+    h2 {
+        font-family: $fuente1;
+        font-size: 3rem;
+    }
+
+    p {
+        font-family: $fuente3;
+        font-size: 2rem;
+    }
+}
+
+header {
     width: 100%;
     height: 40%;
-    h1{ background-color: rgb(255, 255, 255);
-        font-family: 'Nanum Myeongjo', serif;
-        font-size: 90px;
+    padding-top: 30px;
+
+    h1 {
+        font-family: $fuente2;
+        font-size: 4rem;
         text-align: center;
     }
 }
 
-.bg-dark{
-    background-color: rgba(231, 188, 195, 0.753)!important;
+.bg-dark {
+    background-color: rgba(211, 168, 154, 0.747) !important;
 }
 
-.navbar-brand{
-    img{
+.navbar-brand {
+    img {
         width: 5%;
         height: 5%;
     }
 }
 
-li{
-    .nav-item{
-        a{
+li {
+    .nav-item {
+        a {
             font-family: 'Nanum Myeongjo', serif;
-            font-size: 40px;
+            font-size: 4rem;
             color: rgb(0, 0, 0);
         }
     }
 }
+
+.texto {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5%;
+}
+
+    h2 {
+        background-color: rgba(211, 168, 154, 0.747);
+        font-family: $fuente1;
+    }
