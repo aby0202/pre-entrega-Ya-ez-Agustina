@@ -31,7 +31,7 @@ class Carrito {
 
 }
 
-/* FUNCIONES */
+
 
 function renderCard(producto) {
     let cardRendered = ` 
@@ -67,7 +67,7 @@ function renovarStorage() {
     localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
-/* Cargar carrito existente */
+
 window.addEventListener('DOMContentLoaded', (e) => {
     let storage = JSON.parse(localStorage.getItem("carrito"));
     let carritoGuardado = new Carrito(storage.id, storage.productos);
@@ -78,7 +78,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
     actualizarCarrito(carritoGuardado);
 });
 
-/* Generación de mi catálogo de productos */
+
 let catalogoProductos = [];
 
 catalogoProductos.push(new Producto(1, "Almohadon de pana ", 700, 0, "40x40 cm"));
@@ -103,13 +103,13 @@ catalogoProductos.push(new Producto(19, "Pie de cama ", 9000, 0, "200 x 150 cm")
 
 
 
-/* Generar mis tarjetas de productos */
+
 let cardsDiv = document.querySelector("#cards");
 catalogoProductos.forEach(producto => {
     cardsDiv.innerHTML += renderCard(producto);
 })
 
-/* Ingresar al carrito un producto */
+
 let carrito = new Carrito(1);
 let botones = document.querySelectorAll(".botonDeCompra");
 let arrayDeBotones = Array.from(botones);
